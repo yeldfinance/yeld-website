@@ -4,6 +4,19 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
+/* Merunas' custom code */
+.container-audits {
+  margin-top: 40px;
+  border: 1px solid lightgrey;
+  padding: 40px;
+}
+.audits-title {
+  padding-bottom: 20px;
+}
+
+
 [class^="w-icon-"],
 [class*=" w-icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
