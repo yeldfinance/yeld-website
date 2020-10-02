@@ -42,6 +42,16 @@
 		</script>
 		<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
 		<link href="images/webclip.png" rel="apple-touch-icon" />
+		<script type="text/javascript">
+			window.price = null
+			const getPrice = async () => {
+				const req = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=yeld-finance&vs_currencies=usd')
+				const res = await req.json()
+				window.price = res['yeld-finance']['usd']
+				document.querySelector('#price-container').innerText = `$ ${window.price} USD`
+			}
+			getPrice()
+		</script>
 	</head>
 	<body class="body-2">
 		<div style="padding-top: 30px" class="section-5">
@@ -97,6 +107,7 @@
 										class="link-u"
 										>Unicrypt</a
 									><br />
+									<span class="text-span-2">Current price:</span> <span id="price-container">loading...</span><br />
 								</p>
 								<div class="div-block-23">
 									<p class="p3">Links to us.</p>
