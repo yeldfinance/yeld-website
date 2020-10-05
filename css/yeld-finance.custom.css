@@ -795,7 +795,6 @@
 }
 
 .link-nav-stake {
-  margin-left: 52px;
   opacity: .5;
   color: #0a141c;
   font-size: 16px;
@@ -809,6 +808,10 @@
   font-size: 16px;
   font-weight: 500;
   text-decoration: none
+}
+
+.header-link {
+  margin-right: 30px;
 }
 
 .text-span-6 {
