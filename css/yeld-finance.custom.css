@@ -1,3 +1,24 @@
+/* Merunas' custom code */
+.container-audits {
+  margin-top: 40px;
+  border: 1px solid lightgrey;
+  padding: 40px;
+}
+.audits-title {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 479px){
+  .container-audits {
+    margin-top: 40px;
+    border: 1px solid lightgrey;
+    padding: 16px;
+  }
+}
+
+
+
+/* e_opsimath's classes */
 .container {
   width: 100%;
   height: 100%;
@@ -586,6 +607,13 @@
   line-height: 28px;
   text-decoration: none
 }
+.paragraph-audit {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none
+}
 
 .tab1 {
   margin-left: 0
@@ -803,12 +831,13 @@
   cursor: not-allowed
 }
 
-.link-nav-home {
+.link-nav-home, .link-nav-docs {
   color: #2036ff;
   font-size: 16px;
   font-weight: 500;
   text-decoration: none
 }
+
 
 .header-link {
   margin-right: 30px;
@@ -977,6 +1006,7 @@
   display: none
 }
 
+/* Responsive classes for tablets devices*/
 @media screen and (max-width:991px) {
   .tagline {
     margin-top: 0;
@@ -1177,6 +1207,7 @@
   }
 }
 
+/* Responsive classes for mobile landscape */
 @media screen and (max-width:767px) {
   .tagline {
     font-size: 25.6px;
@@ -1217,6 +1248,11 @@
   }
 
   .paragraph-2 {
+    font-size: 14.4px;
+    line-height: 22.4px
+  }
+
+  .paragraph-audit {
     font-size: 14.4px;
     line-height: 22.4px
   }
@@ -1266,11 +1302,15 @@
   }
 
   .link-nav-stake {
-    margin-left: 16px;
+    margin-left: 0px;
     font-size: 12.8px
   }
 
-  .link-nav-home {
+  .header-link {
+    margin-right: 15px;
+  }
+
+  .link-nav-home, .link-nav-docs {
     font-size: 12.8px
   }
 
@@ -1299,6 +1339,9 @@
     margin-top: 80px
   }
 }
+
+
+/* Responsive classes for  mobile phones*/
 
 @media screen and (max-width:479px) {
   .body-2 {
@@ -1370,6 +1413,13 @@
     line-height: 17.919999999999998px
   }
 
+  .paragraph-audit {
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 11.52px;
+    line-height: 17.919999999999998px
+  }
+
   .tab-title {
     margin-right: 8px;
     font-size: 10.4px;
@@ -1422,7 +1472,7 @@
     font-weight: 300
   }
 
-  .link-nav-home {
+  .link-nav-home, .link-nav-docs {
     display: block
   }
 
@@ -1514,7 +1564,7 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 45%;
+    width: 49%;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
