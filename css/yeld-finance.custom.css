@@ -17,6 +17,28 @@
 }
 
 
+/* Style for the count down */
+.link-nav-stake{
+  color: #7f8489;
+  background-image: -webkit-linear-gradient(0deg, #2036ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+
+  cursor: not-allowed; /* remove this line when you're ready to go live */
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  
+}
+
+
 
 /* e_opsimath's classes */
 .container {
@@ -826,9 +848,9 @@
   opacity: .5;
   color: #0a141c;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
-  cursor: not-allowed
+  
 }
 
 .link-nav-home, .link-nav-docs {
