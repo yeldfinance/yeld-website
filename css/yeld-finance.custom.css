@@ -17,6 +17,29 @@
 }
 
 
+/* Style for the count down */
+.link-nav-stake{
+  color: #7f8489;
+  background-image: -webkit-linear-gradient(0deg, #2036ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+  text-align:right;
+
+  cursor: not-allowed; /* remove this line when you're ready to go live */
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  
+}
+
+
 
 /* e_opsimath's classes */
 .container {
@@ -794,15 +817,16 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end
 }
 
 .p3 {
@@ -826,9 +850,9 @@
   opacity: .5;
   color: #0a141c;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
-  cursor: not-allowed
+  
 }
 
 .link-nav-home, .link-nav-docs {
@@ -1008,6 +1032,8 @@
 
 /* Responsive classes for tablets devices*/
 @media screen and (max-width:991px) {
+
+
   .tagline {
     margin-top: 0;
     font-size: 32px;
