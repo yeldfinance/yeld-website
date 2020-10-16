@@ -97,6 +97,7 @@
 							>Buy</a
 						>
 						<a href="https://docs.yeld.finance" class="header-link link-nav-docs">Docs</a>
+						<a href="https://snapshot.page/#/yeld" class="header-link link-nav-docs">Governance</a>
 						<a href="#" class="header-link link-nav-stake" id="countdown">Stake (Soon)</a>
 					</div>
 				</div>
@@ -425,14 +426,12 @@
 
 		<script>
 				const element = document.getElementById("countdown");
-				const exp = moment("2020-10-08T18:00:00+0000");
+				const exp = moment("2020-10-29T18:00:00+0000");
 
 				setInterval(function() {
 				let now = moment().utc();
 				let diffDuration = moment.duration(exp.diff(now));
-				element.innerHTML = `Stake (In ${diffDuration.hours()}h ${diffDuration.minutes()}m ${diffDuration.seconds()}s)`;
-				
-				
+				element.innerHTML = `Stake (In ${diffDuration.days()}d ${diffDuration.hours()}h ${diffDuration.minutes()}m ${diffDuration.seconds()}s)`;
 				}, 1000);
 
 				</script>
