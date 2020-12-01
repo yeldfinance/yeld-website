@@ -4,8 +4,12 @@
   border: 1px solid lightgrey;
   padding: 40px;
 }
-.audits-title {
-  padding-bottom: 20px;
+.audits-title,
+.legal-title {
+  /* padding-bottom: 10px; */
+}
+.legal-title {
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 479px){
@@ -36,7 +40,7 @@
   to {
     -webkit-filter: hue-rotate(-360deg);
   }
-  
+
 }
 
 
@@ -852,7 +856,7 @@
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
-  
+
 }
 
 .link-nav-home, .link-nav-docs {
